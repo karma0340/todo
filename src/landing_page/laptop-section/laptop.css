@@ -1,0 +1,96 @@
+.laptop-section {
+    padding: 60px 0;
+    background-color: #f8fafc;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.laptop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.laptop-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.laptop-item {
+    background: white;
+    position: relative;
+    border: 1px solid #eaeaec;
+    transition: all 0.3s ease;
+    text-align: left;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.laptop-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.item-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #4f46e5;
+    color: white;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.laptop-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.laptop-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    font-size: 13px;
+    color: #7e818c;
+    margin-bottom: 12px;
+}
+
+.laptop-item-price {
+    font-size: 16px;
+    color: #282c3f;
+    font-weight: 700;
+}
+
+.old-price {
+    font-size: 13px;
+    color: #7e818c;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-left: 8px;
+}
